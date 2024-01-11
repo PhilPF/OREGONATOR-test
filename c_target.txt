@@ -1,0 +1,3 @@
+CODE = OD
+H_EQ = oregonator_3_1.eq
+I_EQ = oregonator_1_2.eq

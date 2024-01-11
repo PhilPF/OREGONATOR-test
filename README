@@ -1,0 +1,28 @@
+Succesful compilation commands:
+
+    taylor -header -o "name".h -name "name" "equations".eq
+    taylor -header_name "name".h -jet -jhelper -name "name" -step -o "name".c "equations".eq
+    gcc "name".c "method".c -lm
+
+    When using LAPACK, change the last line by
+    
+        gcc -I/usr/local/LAPACKE/include -L/usr/local/CBLAS -L/usr/local/LAPACKE  "name".c "method".c -llapacke -llapack -lcblas -lrefblas -ltmglib -lm -lgfortran
+
+    When using LAPACK and the rho+sigma files, change the last line by
+
+        gcc -I/usr/local/pgplot -I/usr/local/CBLAS/include -I/usr/local/LAPACKE/include -L/usr/local/pgplot -L/usr/local/CBLAS -L/usr/local/LAPACKE -L/usr/bin taylor_rho.c rk_rho.c taylor_sigma.c rk_sigma.c taylor.c irk.c -lcpgplot -lpgplot -llapacke -llapack -lcblas -lrefblas -ltmglib -lX11 -lm -lgfortran
+
+    For the sigma/rho files, must use -jlib jet_1 for succesful operations, so change the 2 first lines by
+
+        taylor -header -o taylor_sigma.h -name taylor_sigma -jlib jet_1 vdpol_8_1.eq 
+        taylor -header_name taylor_sigma.h -jlib jet_1 -jet -name taylor_sigma -step -o taylor_sigma.c vdpol_8_1.eq 
+
+
+Notice that we can evaluate the vector field using the function
+
+    taylor_coefficients_"name"_A()
+
+
+Naming convention for equation files:
+
+    (function name)_(num. of symbols)_(degree)

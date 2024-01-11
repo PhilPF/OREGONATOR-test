@@ -1,0 +1,62 @@
+RADAU5
+
+Accepted=47417389, Rejected=1682387
+h_min=2.000000e-07, h_max=3.409038e-02
+Num of OD:336258
+lambda_1 = -1e-1.038649 
+lambda_2 = -1e-57.998984 
+lambda_3 = -1e-3244162.452307 
+
+Execution time: 2209.619514 seconds
+
+
+
+RADAU7
+
+Accepted=14444915, Rejected=1344740
+h_min=2.000000e-07, h_max=7.447113e-02
+Num of OD:335883
+lambda_1 = -1e-1.177585 
+lambda_2 = -1e-58.033738 
+lambda_3 = -1e-3244168.936619 
+
+Execution time: 1061.561605 seconds
+
+
+
+RADAU11
+
+Accepted=4389327, Rejected=1097647
+h_min=2.000000e-07, h_max=2.307406e-01
+Num of OD:365654
+lambda_1 = -1e-1.017626 
+lambda_2 = -1e-57.130465 
+lambda_3 = -1e-3244169.350119 
+
+Execution time: 803.673771 seconds
+
+
+
+RADAU13
+
+Accepted=3032178, Rejected=1134148
+h_min=1.780573e-07, h_max=3.128315e-01
+Num of OD:378778
+lambda_1 = -1e-1.071907 
+lambda_2 = -1e-56.726764 
+lambda_3 = -1e-3244168.397676 
+
+Execution time: 892.546425 seconds
+
+
+
+GAUSS6
+
+Accepted=24909870, Rejected=1752464
+h_min=2.000000e-07, h_max=4.531698e-02
+Num of OD:350801
+lambda_1 = -1e-1.044289 
+lambda_2 = -1e-57.896561 
+lambda_3 = -1e-3244169.195342 
+
+Execution time: 1217.480780 seconds

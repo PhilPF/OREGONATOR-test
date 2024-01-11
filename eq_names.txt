@@ -1,0 +1,3 @@
+EQ = oregonator_3_1.eq
+EQ_SIGMA = oregonator_18_1.eq
+EQ_RHO = oregonator_3_1.eq
